@@ -1,0 +1,14 @@
+CREATE TABLE `live_records` (
+  `id` int(11) NOT NULL,
+  `no_ticket` int(11) NOT NULL,
+  `company` varchar(255) NOT NULL,
+  `product` varchar(255) NOT NULL,
+  `invoice` varchar(255) NOT NULL,
+  `sow` TEXT NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `live_records`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `live_records`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;

@@ -1,0 +1,19 @@
+CREATE TABLE IF NOT EXISTS handover(
+  `id` int(11) NOT NULL,
+  `no_ticket` int(10) NOT NULL,
+  `department` varchar(200) NOT NULL,
+  `product` varchar(200) NOT NULL,
+  `description` varchar(200) NOT NULL,
+  `last_update` varchar(200) NOT NULL,
+  `status` varchar(200) NOT NULL,
+  `priority` varchar(200) NOT NULL,
+  `logs_agent` varchar(200) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+
+ALTER TABLE `handover`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `handover`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;

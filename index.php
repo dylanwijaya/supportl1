@@ -5,7 +5,7 @@ $database = new database();
 
 if(isset($_SESSION['is_login']))
 {
-    header('location:home.php');
+    header('location:upsale.php');
 }
 
 if(isset($_COOKIE['username']))
@@ -55,6 +55,9 @@ if(isset($_POST['login']))
         margin-left: 35%;
         width: 30%;
       }
+      .akun {
+        margin-bottom: 0.5rem;
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -78,16 +81,16 @@ if(isset($_POST['login']))
       <img class="mb-4" src="img/logo.svg" alt="" height="100">
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <label for="username" class="sr-only">Username</label>
-      <input type="text" id="username" class="form-control" placeholder="Username" name="username" required autofocus>
+      <input type="text" id="username" class="form-control akun" placeholder="Username" name="username" required autofocus>
       <label for="password" class="sr-only">Password</label>
-      <input type="password" id="password" class="form-control" placeholder="Password" name="password" required>
+      <input type="password" id="password" class="form-control akun" placeholder="Password" name="password" required>
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me" name="remember"> Remember me
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit" name="login">Sign in</button>
-      <a href="register.php" class="btn btn-lg btn-success btn-block">Register</a>
+      <!--<a href="register.php" class="btn btn-lg btn-success btn-block">Register</a>-->
       <p class="mt-5 mb-3 text-muted">Dylan Wijaya &copy; 2021</p>
     </form>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

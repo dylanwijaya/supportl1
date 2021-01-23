@@ -1,0 +1,41 @@
+CREATE TABLE IF NOT EXISTS `upsale` (
+  `id` int(11) NOT NULL,
+  `no_ticket` int(10) NOT NULL,
+  `product` varchar(200) NOT NULL,
+  `company` varchar(200) NOT NULL,
+  `kebutuhan` varchar(200) NOT NULL,
+  `agent` varchar(200) NOT NULL,
+  `sales` varchar(200) NOT NULL,
+  `tgl_fu` date NOT NULL,
+  `channel` varchar(200) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `upsale` (`id`, `no_ticket`, `product`, `company`, `kebutuhan`, `agent`, `sales`, `tgl_fu`, `channel`) VALUES
+(1, '3123', 'NEO', 'Supra', 'VM', 'Dylan', 'Aisyah', '2020-01-01', 'Ticket'),
+(5, '1231', 'GIO', 'Supra', 'VM', 'Dylan', 'Aisyah', '2020-01-01', 'Ticket'),
+(7, '1534', 'SWH', 'Supra', 'VM', 'Dylan', 'Aisyah', '2020-01-01', 'Ticket'),
+(8, '1231', 'Private', 'Supra', 'VM', 'Dylan', 'Aisyah', '2020-01-01', 'Ticket');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `upsale`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `upsale`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
